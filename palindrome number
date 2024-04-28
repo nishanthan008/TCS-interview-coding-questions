@@ -1,0 +1,24 @@
+#include <iostream>
+#include<cmath>
+using namespace std;
+int main()
+{
+    int n,count=0,n1,rev=0,rem=0;
+    cout<<"enter you value:";
+    cin>>n;
+    n1=n;
+    while(n1!=0)
+    {
+        rem=n1%10;
+        rev=(rev*10)+rem;
+        n1=n1/10;
+    }
+    if(n==rev)
+    {
+    cout<<"panlindrome";
+    }
+    else
+    {
+     cout<<"not a panlindrome";   
+    }   
+}
