@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+        int a[10],n,j=0;
+    cout<<"enter the size of the array:";
+    cin>>n;
+    cout<<"Enter your elements:";
+    for(int i=0;i<n;i++)
+    {
+        cin>>a[j];
+        if(a[j]!=0)
+        {
+            j++;
+        }
+    }
+for(int i=0;i<n;i++)
+    {
+        cout<<a[i]<<" ";
+    }
+    return 0;
+}
