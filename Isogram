@@ -1,0 +1,28 @@
+#include <iostream>
+#include <unordered_map>
+using namespace std;
+int main()
+{
+	    string S;
+	    unordered_map<char,int>map;
+	    cout<<"enter your string:";
+	    cin>>S;
+	    int flag=0;
+	    for(int i=0;i<S.size();i++)
+	    {
+	        map[S[i]]++;
+	        if(map[S[i]]>1)
+	        {
+	            flag=1;
+	        }
+	    }
+	    if(flag==0)
+	    {
+	        cout<<"Isogram";
+	    }
+	    else
+	    {
+	         cout<<"not Isogram";
+	    }
+    
+}
