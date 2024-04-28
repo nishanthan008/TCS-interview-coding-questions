@@ -1,0 +1,32 @@
+#include <iostream>
+#include<unordered_map>
+using namespace std;
+int main()
+{
+    string arr[]={"aaa","bbb","aaa","bbb","ccc","aaa"};
+    int n=sizeof(arr)/sizeof(string);
+    unordered_map<string,int>map;
+    int max1=0,max2=0;
+    string s1="",s2="";
+    for(int i=0;i<n;i++)
+    {
+        map[arr[i]]++;
+    }
+    for(auto x:map)
+    {
+        if(max1<x.second)
+        {
+            max2=max1;
+            s2=s1;
+            max1=x.second;
+            s1=x.first;
+        }
+        else if(max2<x.second)
+        {
+           max2=x.second;
+            s2=x.first; 
+        }
+    }
+    cout<<s2;
+    return 0;
+}
