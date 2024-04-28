@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int v,w,x,y;
+    cout<<"enter the no.of vechile:";
+    cin>>v;
+    cout<<"enter the no.of wheel:";
+    cin>>w;
+    if(w<v || w<2 || w%2!=0 )
+    {
+       cout<<"Invalid input"; 
+    }
+    else
+    {
+    x=((4*v)-w)/2;
+    y=v-x;
+    cout<<"No.of bikes- "<<x<< "\nNo.of cars-"<<y;
+}
+    return 0;
+}
