@@ -1,0 +1,19 @@
+#include <iostream>
+#include<cmath>
+using namespace std;
+int main()
+{
+    int dec,rem,bin,i=0;
+
+    cout<<"Binary to Decimal conversion"<<endl;
+    cout<<"enter your Binary number:";
+    cin>>bin;
+    while(bin!=0)
+    {
+       rem=bin%10;
+       dec+=rem*pow(2,i);
+       bin=bin/10;
+       i++;
+    }
+    cout<<"decinmal number:"<<dec;   
+}
