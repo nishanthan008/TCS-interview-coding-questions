@@ -1,0 +1,18 @@
+#include <iostream>
+#include <algorithm>
+using namespace std;
+int main()
+{
+        int n,price=1;
+    cout<<"enter the number of the product:";
+    cin>>n;
+    while(n>0)
+    {
+        price*=n%10;
+        n=n/10;
+    }
+    
+    cout<<"price of the product : "<<price;
+    
+    return 0;
+}
