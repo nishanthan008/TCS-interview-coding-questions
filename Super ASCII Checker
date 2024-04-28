@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int a[26];
+    string s="abb";
+    int n=s.size(),flag=0;
+    for(int i=0;i<n;i++)
+    {
+        int index=(int)s[i]-97;
+        a[index]++;
+    }
+    for(int i=0;i<n;i++)
+    {
+        int index=(int)s[i]-97;
+        if(a[index]!=index+1)
+        {
+          flag=1;  
+        }
+    }
+    if(flag==0)
+    {
+        cout<<"Yes";
+    }
+    else
+    {
+        cout<<"NO";
+    }
+}
