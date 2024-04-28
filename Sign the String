@@ -1,0 +1,23 @@
+#include <iostream>
+#include <unordered_map>
+using namespace std;
+int main()
+{
+	    string S;
+	    unordered_map<char,int>map;
+	    cout<<"enter your string:";
+	    cin>>S;
+	    int c1=0,c2=0;
+	    for(int i=0;i<S.size();i++)
+	    {
+	        if(S[i]=='*')
+	        {
+	            c1++;
+	        }
+	        else
+	        {
+	            c2++;
+	        }
+	    }
+	    cout<<c1-c2;
+}
